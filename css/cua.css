@@ -1,0 +1,11 @@
+h2 {
+  font-family: CUAFont !important;
+}
+h6 {
+  font-family: CUAFont !important;
+  font-size: 70% !important;
+}
+.contenido p{
+  text-align: justify !important;
+  font-size: 75% !important;
+}

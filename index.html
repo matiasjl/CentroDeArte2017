@@ -1,0 +1,425 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Centro Universitario de Arte</title>
+
+		<link rel="manifest" href="manifest.json">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+		<link rel="stylesheet" href="css/cua.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!-- Fuentes personalizadas -->
+		<style>
+			@font-face{
+		    font-family: CUAFont;
+		    src: url("lib/font/dosis/Dosis-SemiBold.otf");
+			}
+		</style>
+
+		<!-- fotosss -->
+		<script>
+		var contador = 0;
+			var imgPar1=new Array(
+		      'data/par1/1.jpg',
+		      'data/par1/2.jpg',
+		      'data/par1/3.jpg',
+		      'data/par1/4.jpg',
+		      'data/par1/5.jpg'
+		  );
+			var imgCua3=new Array(
+		      'data/cua3/1.jpg',
+		      'data/cua3/2.jpg',
+		      'data/cua3/3.jpg',
+		      'data/cua3/4.jpg',
+					'data/cua3/5.jpg',
+					'data/cua3/6.jpg',
+					'data/cua3/7.jpg',
+					'data/cua3/8.jpg',
+					'data/cua3/9.jpg',
+					'data/cua3/10.jpg',
+					'data/cua3/11.jpg',
+					'data/cua3/12.jpg',
+					'data/cua3/13.jpg',
+					'data/cua3/14.jpg'
+		  );
+			var imgUni=new Array(
+		      'data/uni/1.jpg',
+		      'data/uni/2.jpg',
+		      'data/uni/3.jpg',
+		      'data/uni/4.jpg',
+					'data/uni/5.jpg',
+					'data/uni/6.jpg',
+					'data/uni/7.jpg',
+					'data/uni/8.jpg',
+					'data/uni/9.jpg',
+					'data/uni/10.jpg',
+					'data/uni/11.jpg',
+					'data/uni/12.jpg',
+					'data/uni/13.jpg',
+					'data/uni/14.jpg',
+					'data/uni/15.jpg'
+		  );
+			var imgMacchi=new Array(
+		      'data/publi/macchi/1.jpg',
+					'data/publi/macchi/2.jpg',
+					'data/publi/macchi/3.jpg',
+					'data/publi/macchi/4.jpg'
+		  );
+			var imgPorter=new Array(
+		      'data/publi/porter/1.jpg',
+					'data/publi/porter/2.jpg',
+					'data/publi/porter/3.jpg',
+					'data/publi/porter/4.jpg'
+		  );
+			var imgAnuarios=new Array(
+		      'data/publi/anuarios/1.jpg',
+					'data/publi/anuarios/2.jpg',
+					'data/publi/anuarios/3.jpg',
+					'data/publi/anuarios/4.jpg',
+					'data/publi/anuarios/5.jpg',
+					'data/publi/anuarios/6.jpg',
+					'data/publi/anuarios/7.jpg',
+					'data/publi/anuarios/8.jpg',
+					'data/publi/anuarios/9.jpg',
+					'data/publi/anuarios/10.jpg',
+					'data/publi/anuarios/11.jpg',
+					'data/publi/anuarios/12.jpg',
+					'data/publi/anuarios/14.jpg'
+		  );
+			function cont()
+	    {
+				 contador = contador + 1;
+				 if(contador == 100){
+					 contador = 0;
+				 }
+	    }
+			function rotarImgPar1()
+	    {
+				//var index=Math.floor((Math.random()*imgPar1.length));	//aleatorio
+				var index = contador % imgPar1.length;
+        document.getElementById("imgPar1").src=imgPar1[index];
+	    }
+			function rotarImgCua3()
+	    {
+				var index = contador % imgCua3.length;
+        document.getElementById("imgCua3").src=imgCua3[index];
+	    }
+			function rotarImgUni()
+	    {
+				var index = contador % imgUni.length;
+        document.getElementById("imgUni").src=imgUni[index];
+	    }
+			function rotarImgMacchi()
+	    {
+				var index = contador % imgMacchi.length;
+        document.getElementById("imgMacchi").src=imgMacchi[index];
+	    }
+			function rotarImgPorter()
+	    {
+				var index = contador % imgPorter.length;
+        document.getElementById("imgPorter").src=imgPorter[index];
+	    }
+			function rotarImgAnuarios()
+	    {
+				var index = contador % imgAnuarios.length;
+        document.getElementById("imgAnuarios").src=imgAnuarios[index];
+	    }
+			onload=function()
+			{
+					cont();
+					rotarImgPar1();
+					rotarImgCua3();
+					rotarImgUni();
+					rotarImgMacchi();
+					rotarImgPorter();
+					rotarImgAnuarios();
+					setInterval(cont,3000);
+					setInterval(rotarImgPar1,3000);
+					setInterval(rotarImgCua3,3000);
+					setInterval(rotarImgUni,3000);
+					setInterval(rotarImgMacchi,3000);
+					setInterval(rotarImgPorter,3000);
+					setInterval(rotarImgAnuarios,3000);
+			}
+		</script>
+	</head>
+
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section class="contenido">
+					<section data-background-video="data/marcaHD.mp4" data-background-color="#fff">
+					<!--<section data-background-color="#fff">-->
+						<h2 style="font-size:145%!important;">CENTRO UNIVERSITARIO DE ARTE</h2>
+						<!-- <video autoplay preload muted loop>
+							<source src="data/marcaHD.mp4" type="video/mp4">
+						</video>-->
+						<br><br><br><br><br><br>
+					</section>
+					<section>
+						<br><br>
+						<h2 style="font-size:145%!important;">CENTRO UNIVERSITARIO DE ARTE</h2>
+						<p>El Centro de arte, dependiente de la Secretaría de Arte y Cultura de la Universidad Nacional de La Plata (UNLP), funciona, desde el 6 de octubre de 2017, en el ex edificio Tres Facultades. Uno de sus principales objetivos es promover y difundir de las producciones artísticas y culturales nacionales, regionales y de las unidades académicas, inscribiéndose, de este modo, en el proyecto mayor de dotar a la Universidad y a la comunidad de un ámbito estratégico para la ciudad. Tiene a su disposición un auditorio para sesenta personas; una sala con capacidad para, aproximadamente, doscientas personas que disfrutan de espectáculos, eventos musicales, conciertos, conferencias y proyecciones; dos salas de exposiciones de artes visuales; un espacio dedicado a instalaciones audiovisuales y multimediales; y ámbitos destinados a talleres y camarines.</p>
+					</section>
+					<section data-background-color="#000">
+						<h2>PRE-INAUGURACIÓN</h2>
+						<br>
+						<p>El Centro Universitario de Arte abrió por primera vez sus puertas, en septiembre de 2015, a través de un recorrido artístico por los espacios que hoy, finalmente, lo integran. El espectáculo, en medio de la obra en construcción, estuvo marcado por intervenciones audiovisuales, presentaciones musicales, performances y exhibiciones de graduados y docentes de la Facultad de Bellas Artes de la UNLP.</p>
+					</section>
+					<section data-background-video="data/cua1.mp4" data-background-color="#000">
+					</section>
+					<section data-background-color="#000">
+						<h2>HUMANIDADES: CUATRO ACERCAMIENTOS</h2>
+						<br>
+						<p>A mediados de 2015, la Secretaría de Arte y Cultura de la UNLP, bajo la coordinación de Hernán Khourian, convocó a cuatro artistas para que siguieran el proceso de refuncionalización del ex edificio Tres Facultades, conocido también porque aquí funcionaba la Facultad de Humanidades de la Universidad. Durante un año, Julián D´Angiolillo, Julia Masvernat, Martin Oesterheld y San Poggio registraron la obra en construcción y exploraron e intervinieron archivos fotográficos, videográficos y cinematográficos, para realizar una muestra colectiva (en calidad de obra en proceso) en el marco de la 4º Bienal Universitaria de Arte y Cultura.</p>
+					</section>
+					<section data-background-video="data/cua2.mp4" data-background-color="#000">
+						<!-- <video autoplay preload muted loop>
+    							 <source src="data/cua2.mp4" type="video/mp4">
+								 </video> -->
+					</section>
+					<section data-background-color="#000">
+						<h2>ANTECEDENTES</h2>
+						<br>
+						<p>La creación del Centro Universitario de Arte se ubica en el marco de un novedoso proyecto de refuncionalización y puesta en valor del ex edificio Tres Facultades, iniciado en 2009. Esta iniciativa incluye, a su vez, las nuevas dependencias de la Radio y el canal de TV universitarios; la Editorial; las áreas de Posgrado de toda la Universidad; y el Pasaje del Bicentenario, un corredor peatonal entre el edificio de la Presidencia de la UNLP y el ex Tres Facultades que recupera las cuatro fachadas del Rectorado y genera un paseo público a través de la manzana.</p>
+					</section>
+					<section data-background-color="#000">
+						<img src="" id="imgCua3">
+						<!--<a href="#/1"><img src="data/ui/arriba2.png" style="border:0; box-shadow:none;"></a>-->
+					</section>
+				</section>
+
+				<section class="contenido">
+					<section>
+						<h2>PAR</h2>
+						<br>
+					</section>
+					<section>
+						<h2>PAR</h2>
+						<P>El Programa de Apoyo a la Realización Artística y Cultural (PAR) nace en 2017 destinado a incentivar la producción de artistas, grupos, colectivos y compañías de arte a través de ayudas económicas. En su primer año, los jurados, conformados por docentes y artistas especializados, seleccionaron más de cien proyectos que serán presentados durante este ciclo. PAR depende de la Secretaría de Arte y Cultura de la UNLP, tiene una periodización bianual y abarca las siguientes áreas: artes visuales, literatura, artes escénicas, artes audiovisuales, diseño y música.</P>
+					</section>
+					<section data-background-color="#000">
+						<img src="" id="imgPar1">
+					</section>
+				</section>
+
+				<section class="contenido">
+					<section>
+						<h2>BIENAL</h2>
+					</section>
+					<section>
+						<h2>BIENAL</h2>
+						<p>La Bienal Universitaria de Arte y Cultura (BUAyC) reúne en una semana un abanico de actividades: exposiciones, charlas, talleres y espectáculos artísticos en espacios públicos de la ciudad de La Plata. La primera edición nació en el año 2010, en el marco de los 200 años de la Revolución de Mayo. A partir de aquel momento se organiza cada dos años en conjunto con la Facultad de Bellas Artes de la UNLP.</p>
+					</section>
+					<section data-background-color="#000">
+							<h2>1º BUAyC</h2>
+							<h6>Del 15 al 23 de octubre de 2010</h6>
+							<p>Los 200 años de la Revolución de Mayo fue el contexto que propició el desarrollo de la primera edición de la Bienal que trató sobre el rol de las Universidades públicas en el Bicentenario.</p>
+					</section>
+					<section data-background-video="data/bienal1.mp4" data-background-color="#000">
+					</section>
+					<section data-background-color="#000">
+						<h2>2º BUAyC</h2>
+						<h6>Del 11 al 19 de octubre de 2012</h6>
+						<p>Bajo el título <em>Pasados Presentes. Arte Argentino</em> la propuesta consistió en revisar las producciones artísticas de nuestro país para revisar cómo fueron contadas y organizadas en la historia del arte tradicional.</p>
+					</section>
+					<section data-background-video="data/bienal2.mp4" data-background-color="#000">
+					</section>
+					<section data-background-color="#000">
+						<h2>3º BUAyC</h2>
+						<h6>Del 11 al 19 de octubre de 2012</h6>
+						<p>En esta tercera ocasión, el eje propuesto fue <em>Poéticas del encuentro. Un patio, un zaguán, un rincón...</em> Poetizar los encuentros permitió habilitar nuevos diálogos por recorridos ya transitados para ejercitar la capacidad inventiva del arte en la configuración de otros acercamientos y otras experiencias de los espacios cotidianos.</p>
+					</section>
+					<section data-background-video="data/bienal3.mp4" data-background-color="#000">
+					</section>
+					<section data-background-color="#000">
+						<h2>4º BUAyC</h2>
+						<h6>Del 21 al 28 de octubre de 2016</h6>
+						<p>Con el título <em>Plazas y multitudes</em> la 4º Bienal se propuso reunir dos acontecimientos que singularizaron la agenda del año: los 40 años del Golpe cívico-militar y los 200 años de la Declaración de la Independencia.</p>
+					</section>
+					<section data-background-video="data/bienal4.mp4" data-background-color="#000">
+					</section>
+				</section>
+
+				<section class="contenido">
+					<section>
+						<h2 style="font-size:150%!important;">LA UNIVERSIDAD QUE NO SE VE</h2>
+					</section>
+					<section>
+						<br><br>
+						<h2 style="font-size:150%!important;">LA UNIVERSIDAD QUE NO SE VE</h2>
+						<p>Impulsada desde la Secretaría de Arte y Cultura, en el año de conmemoración del centenario de la UNLP, esta iniciativa comprendió dos etapas. Por un lado, <em>El pasado en el presente</em> destinada a la recopilación de fotografías antiguas sobre el pasado de la institución. Por otro lado, <em>Para los próximos 100 años</em>, que consistió en la compilación de las imágenes de veinte artistas dedicados a retratar los rasgos que caracterizan a los multifacéticos espacios de la Universidad. Las unidades académicas, los colegios, las aulas, los alumnos, los docentes y los trabajadores no docentes son capturados en cada imagen desde la singularidad de los fotógrafos.</p>
+					</section>
+					<section data-background-color="#000">
+						<img src="" id="imgUni">
+					</section>
+				</section>
+
+				<section class="contenido">
+					<section>
+						<h2>BELLAS ARTES EN VIVO</h2>
+					</section>
+					<section>
+						<h2>BELLAS ARTES EN VIVO</h2>
+						<p>La Secretaría de Arte y Cultura y la Facultad de Bellas Artes de la UNLP organizan este ciclo, en el que se realizan espectáculos de música y de artes escénicas para adultos y niños. El libre acceso y el trabajo conjunto con secretarías de extensión de distintas facultades y organizaciones sociales, gremiales y políticas, constituyen una de las líneas más importantes del proyecto de la Secretaría: llevar a cabo espectáculos y conciertos de primer nivel y, al mismo tiempo, favorecer un acceso masivo y con igualdad de derechos.</p>
+					</section>
+					<section data-background-color="#000">
+						<h2>TSUNAMI</h2>
+						<h6>Junio de 2016</h6>
+						<p>Clarisa Schwindt: idea y realización; Pablo Balut: asistencia técnica; Eliana Cuervo y Paula García: iluminación.</p>
+					</section>
+					<section data-background-video="data/bavivo1.mp4" data-background-color="#000">
+					</section>
+					<section data-background-color="#000">
+						<h2>EL CUMPLE AÑOS, UNA OBRA DE PAYASOS</h2>
+						<h6>Diciembre de 2015</h6>
+						<p>Compañía Tecito y a la cama: Agustina Bermúdez, Sebastián Loinaz, Ma. Eugenia Molinuevo, Emilia S. Iacovino, Aldana Asorey, y Soledad Morales.</p>
+					</section>
+					<section data-background-video="data/bavivo2.mp4" data-background-color="#000">
+					</section>
+					<section data-background-color="#000">
+						<h2>FULANAS TRÍO (en formación de cuarteto)</h2>
+						<h6>Diciembre de 2015</h6>
+						<p>Silvina Cañoni: percusión, melódica, guitarra y voz; Cecilia Picaroni: guitarra, charango, percusión y voz; Victoria González Scotti: percusión, piano y voz; y Victoria García: piano, acordeón, percusión y voz.</p>
+					</section>
+					<section data-background-video="data/bavivo3.mp4" data-background-color="#000">
+					</section>
+					<section data-background-color="#000">
+						<h2>BUEY SOLO</h2>
+						<h6>Mayo de 2015</h6>
+						<p>Marcelo Moguilevsky: composición en tiempo real y Eric Markowski: proyecciones visuales.</p>
+					</section>
+					<section data-background-video="data/bavivo4.mp4" data-background-color="#000">
+					</section>
+				</section>
+
+				<section class="contenido">
+					<section>
+						<h2>ARTES VISUALES</h2>
+					</section>
+					<section>
+						<h2>ARTES VISUALES</h2>
+						<p>El programa de artes visuales de la Secretaría de Arte y Cultura de la UNLP agrupa la producción, el conocimiento y la circulación de las prácticas artísticas a través de exposiciones de artistas argentinos; encuentros con curadores, investigadores y artistas; presentaciones de libros; y talleres y seminarios de acceso libre y gratuito.</p>
+					</section>
+					<section data-background-color="#000">
+						<h2>LAS CONSTRUCTORAS</h2>
+						<h6>Mayo de 2016</h6>
+						<p>Artista: Paula Massarutti. Curaduría: Laura Códega.</p>
+					</section>
+					<section data-background-video="data/visuales1.mp4" data-background-color="#000">
+					</section>
+					<section data-background-color="#000">
+						<h2>VISIONES ENSAMBLADAS. REENCUADRES A LA OBRA DE BATTLE PLANAS</h2>
+						<h6>Noviembre de 2015</h6>
+						<p>Artista: Juan Battle Planas. Curaduría: Programa de Pasantías en Investigación y Producción de Exposiciones (PIPE).</p>
+					</section>
+					<section data-background-video="data/visuales2.mp4" data-background-color="#000">
+					</section>
+					<section data-background-color="#000">
+						<h2>EL PASEO</h2>
+						<h6>Septiembre de 2015</h6>
+						<p>Artista: Elba Bairon. Curaduría: Santiago Villanueva.</p>
+					</section>
+					<section data-background-video="data/visuales3.mp4" data-background-color="#000">
+					</section>
+					<section data-background-color="#000">
+						<h2>TUMBA DEL SOLDADO DESCONOCIDO</h2>
+						<h6>Julio de 2015</h6>
+						<p>Artista: Mariana Tellería. Textos y entrevista: Federico Sanrtarsiero.</p>
+					</section>
+					<section data-background-video="data/visuales4.mp4" data-background-color="#000">
+					</section>
+				</section>
+
+				<section class="contenido">
+					<section>
+						<h2>PUBLICACIONES</h2>
+					</section>
+					<section>
+						<h2>PUBLICACIONES</h2>
+						<p>Las publicaciones son un área transversal a las actividades de la Secretaría de Arte y Cultura de la UNLP, realizadas en conjunto con la Editorial de la Universidad Nacional de La Plata (EDULP) y Papel Cosido. Registros sobre arte en América Latina, el sello editorial de la Facultad de Bellas Artes de la UNLP. Entre la gran cantidad de materiales editoriales pueden señalarse: catálogos de exposiciones, libros de artistas anuarios y compilaciones de entrevistas a artistas.</p>
+					</section>
+					<section data-background-color="#000">
+						<h2>COLECCIÓN BREVIARIOS. CONVERSACIÓN CON JORGE MACCHI</h2>
+						<h6>2017</h6>
+					</section>
+					<section data-background-color="#000" style="margin-top:-300px!important;">
+						<img src="" id="imgMacchi" height="1200" width="800">
+					</section>
+					<section data-background-color="#000">
+						<h2>COLECCIÓN BREVIARIOS. CONVERSACIÓN CON LILIANA PORTER</h2>
+						<h6>2016</h6>
+					</section>
+					<section data-background-color="#000" style="margin-top:-300px!important;">
+						<img src="" id="imgPorter" height="1200" width="800">
+					</section>
+					<section data-background-color="#000">
+						<h2>ANUARIOS</h2>
+					</section>
+					<section data-background-color="#000" style="margin-top:-300px!important;">
+						<img src="" id="imgAnuarios" height="1200" width="800">
+					</section>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				controls: false,
+				progress: false,
+				loop: true,
+				//width: "800px",
+				//height: "600",
+				customcontrols: {
+					controls: [
+						{ icon: '<img src="data/ui/izq2.png" height="100" width="35">',
+						  css: 'position: fixed; left: 5px; top: 45%; z-index: 99;',
+						  action: 'Reveal.left(); return false;'
+						},
+						{ icon: '<img src="data/ui/der2.png" height="100" width="35">',
+						  css: 'position: fixed; right: 0px; top: 45%; z-index: 99;',
+						  action: 'Reveal.right(); return false;'
+						},
+						{ icon: '<img src="data/ui/abajo2.png" height="35" width="100">',
+						  css: 'position: fixed; left: 42%; bottom: 10%; z-index: 99;',
+						  action: 'Reveal.down(); return false;'
+						}
+					]
+				},
+				//margin: 0,
+				//minScale: 1,
+				//maxScale: 1,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/customcontrols/customcontrols.js' },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
